@@ -21,3 +21,19 @@ The Stack class with the following member functions:
  bool full(); // Return true if a stack is full
 */
 
+int main()
+{
+  int numTest;
+  int sizeOfStack;
+  string arithExpr;
+
+  cin >> sizeOfStack;
+  cin >> numTest;
+  Stack exprStack(sizeOfStack);
+  for(int j=0; j < numTest ; j++){
+    cin >> arithExpr;
+    checkExpression(arithExpr, exprStack);
+    exprStack.reset();
+  } // end for (int j= )
+  return 0;
+}
