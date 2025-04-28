@@ -5,20 +5,14 @@
 using namespace std;
 
 /*
-Create a Stack class of character with the following private data: 
- int stackSize; // size of a stack
- int stackPtr; // the number of characters stored in the stack. It should be also used as an
-               // index into a stack entry where the top most element is located in the stack.
- char *charStack; // a character pointer that points to a character array which should be
-                  // created dynamically using new statement.
-The Stack class with the following member functions:
- Stack(int =10); // constructor with an argument that will be used to initialize the stack with a given size.
-                 // When a stack is initially created, the private data members should be initialized.
- void push(char); // Push a character onto the top of a stack.
- char pop(); // Return the topmost element from a stack
- void reset(); // Reset stackPtr to 0. This says that the stack is reset.
- bool empty(); // Return true if a stack is empty
- bool full(); // Return true if a stack is full
+Implement an algorithm as a global function checkExpression(string, Stack &) 
+to check whether a given arithmetic expression such as (12+3*30)+(20) is correct. 
+The first parameter will hold an expression. The second parameter will be 
+a stack used to process an expression.
+A correct expression is defined as an expression which contains the same number 
+of (‘s and )’s. That is, if there is a (, the expression should have a 
+corresponding ). For example, the above expression is a correct one. The expression 
+)2+3( is incorrect, but (2+3) is correct. Certainly, 2+3 is also correct.
 */
 
 int main()
