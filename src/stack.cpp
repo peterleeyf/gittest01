@@ -20,3 +20,15 @@ The Stack class with the following member functions:
  bool empty(); // Return true if a stack is empty
  bool full(); // Return true if a stack is full
 */
+
+class Stack {
+  public:
+    Stack() {
+      stackSize = 10;
+    }
+    Stack(int i) {
+      stackSize = i;
+    }
+  private:
+    int stackSize;
+};
